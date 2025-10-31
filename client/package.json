@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.12.2",
+    "framer-motion": "^12.23.24",
+    "react-audio-player": "^0.17.0",
+    "react-speech-recognition": "^4.0.1"
+  }
+}
+
