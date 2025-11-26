@@ -25,13 +25,18 @@ public class SecurityConfig {
         http
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/**").permitAll()
-                .requestMatchers("/api/users/register").permitAll()
+                .requestMatchers(
+                    "/api/auth/**",
+                    "/api/users/register",
+                    "/api/actuator/health/**",
+                    "/api/actuator/info"
+                ).permitAll()
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            );
+            )
+            .httpBasic(basic -> basic.realmName("NeuroSync API"));
             
         return http.build();
     }

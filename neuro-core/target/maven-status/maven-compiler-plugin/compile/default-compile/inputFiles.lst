@@ -1,0 +1,16 @@
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\controller\service\NeuroService.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\controller\UserController.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\model\Role.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\controller\NeuroController.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\service\UserService.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\exception\UserNotFoundException.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\model\BaseEntity.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\exception\UserAlreadyExistsException.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\service\CustomUserDetailsService.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\model\User.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\dto\UserRegistrationDto.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\repository\UserRepository.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\NeuroSyncApplication.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\config\SecurityConfig.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\core\dto\UserResponse.java
+C:\Users\Jaylo\Documents\NeuroSync\neuro-core\src\main\java\com\neurosync\controller\model\NeuroResponse.java

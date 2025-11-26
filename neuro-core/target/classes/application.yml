@@ -28,11 +28,22 @@ spring:
       roles: ADMIN
 
 # Logging configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when_authorized
+      roles: ADMIN
+
 logging:
   level:
     org:
       springframework: INFO
       hibernate: INFO
+      security: DEBUG
     com.neurosync: DEBUG
   file:
     name: logs/application.log

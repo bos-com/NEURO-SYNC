@@ -1,0 +1,299 @@
+2025-11-26 21:10:51 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 23308 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:10:51 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:10:51 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:10:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2025-11-26 21:10:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:10:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:10:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:10:55 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:10:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4063 ms
+2025-11-26 21:10:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:10:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:10:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:10:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:10:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:10:57 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64dfb31d
+2025-11-26 21:10:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:10:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:10:57 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:10:59 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:11:00 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:11:01 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:11:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c3a1d7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63541cd4, org.springframework.security.web.context.SecurityContextHolderFilter@15ca7322, org.springframework.security.web.header.HeaderWriterFilter@7ff7e353, org.springframework.web.filter.CorsFilter@2111d7b9, org.springframework.security.web.authentication.logout.LogoutFilter@3180131e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28200d43, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e24a2e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a023e34, org.springframework.security.web.session.SessionManagementFilter@20cf3ab3, org.springframework.security.web.access.ExceptionTranslationFilter@df04d12, org.springframework.security.web.access.intercept.AuthorizationFilter@8cce9ad]
+2025-11-26 21:11:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:11:02 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 11.631 seconds (process running for 13.108)
+2025-11-26 21:14:03 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26 21:14:03 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-26 21:14:03 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-26 21:14:03 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:14:03 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:21:15 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 26064 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:21:15 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:21:15 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:21:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:21:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 1 JPA repository interface.
+2025-11-26 21:21:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:21:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:21:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:21:20 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:21:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5006 ms
+2025-11-26 21:21:21 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:21:21 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:21:21 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:21:22 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:21:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:21:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d98729a
+2025-11-26 21:21:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:21:23 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:21:23 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:21:25 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:21:25 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:21:26 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:21:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:21:27 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2456716b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63541960, org.springframework.security.web.context.SecurityContextHolderFilter@3095c449, org.springframework.security.web.header.HeaderWriterFilter@69bdcfbc, org.springframework.web.filter.CorsFilter@6d43c881, org.springframework.security.web.authentication.logout.LogoutFilter@25865fca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71dac63f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59e24c62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@467625e3, org.springframework.security.web.session.SessionManagementFilter@5d414943, org.springframework.security.web.access.ExceptionTranslationFilter@77f1026e, org.springframework.security.web.access.intercept.AuthorizationFilter@38c9e937]
+2025-11-26 21:21:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:21:28 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 14.466 seconds (process running for 15.598)
+2025-11-26 21:23:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26 21:23:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-26 21:23:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-26 21:23:14 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/actuator/health' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:23:14 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/actuator/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:26:56 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 6076 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:26:56 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:26:56 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:26:57 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.neurosync.NeuroSyncApplication]
+2025-11-26 21:26:58 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.neurosync.NeuroSyncApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:178)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.neurosync.NeuroSyncApplication.main(NeuroSyncApplication.java:9)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'securityConfig' for bean class [com.neurosync.core.config.SecurityConfig] conflicts with existing, non-compatible bean definition of same name and class [com.neurosync.config.SecurityConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:164)
+	... 13 common frames omitted
+2025-11-26 21:29:21 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 23900 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:29:21 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:29:21 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:29:21 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.neurosync.NeuroSyncApplication]
+2025-11-26 21:29:22 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.neurosync.NeuroSyncApplication]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:178)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:416)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:597)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.neurosync.NeuroSyncApplication.main(NeuroSyncApplication.java:9)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'securityConfig' for bean class [com.neurosync.core.config.SecurityConfig] conflicts with existing, non-compatible bean definition of same name and class [com.neurosync.config.SecurityConfig]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:361)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:288)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:196)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:164)
+	... 13 common frames omitted
+2025-11-26 21:30:51 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 27372 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:30:51 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:30:51 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:30:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:30:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 1 JPA repository interface.
+2025-11-26 21:30:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:30:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:30:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:30:57 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:30:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6612 ms
+2025-11-26 21:30:58 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:30:59 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:30:59 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:31:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:31:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:31:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@377e90b0
+2025-11-26 21:31:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:31:00 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:31:00 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:31:04 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:31:04 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:31:05 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:31:07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:31:07 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2fb9695a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33da0fad, org.springframework.security.web.context.SecurityContextHolderFilter@3fc064cb, org.springframework.security.web.header.HeaderWriterFilter@cbd9494, org.springframework.web.filter.CorsFilter@712eb075, org.springframework.security.web.authentication.logout.LogoutFilter@3e09067, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@699fe19f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b8a11d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38c9e937, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1cd4082a, org.springframework.security.web.session.SessionManagementFilter@605c2b9f, org.springframework.security.web.access.ExceptionTranslationFilter@68312b85, org.springframework.security.web.access.intercept.AuthorizationFilter@3f89d36c]
+2025-11-26 21:31:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:31:08 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 18.921 seconds (process running for 20.313)
+2025-11-26 21:31:26 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26 21:31:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-26 21:31:26 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-11-26 21:31:26 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/actuator/health' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:31:26 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/actuator/health' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-11-26 21:34:43 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 26864 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:34:43 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:34:43 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:34:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:34:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2025-11-26 21:34:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:34:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:34:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:34:47 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:34:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3288 ms
+2025-11-26 21:34:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:34:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:34:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:34:48 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:34:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:34:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27b490de
+2025-11-26 21:34:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:34:48 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:34:48 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:34:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:34:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:34:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:34:51 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:34:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39cf7f3c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25df95b, org.springframework.security.web.context.SecurityContextHolderFilter@2b8a11d7, org.springframework.security.web.header.HeaderWriterFilter@25865fca, org.springframework.web.filter.CorsFilter@2fb9695a, org.springframework.security.web.authentication.logout.LogoutFilter@7320bccc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@329b4b8b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26401eda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2456716b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33da0fad, org.springframework.security.web.session.SessionManagementFilter@44a25dc7, org.springframework.security.web.access.ExceptionTranslationFilter@628af295, org.springframework.security.web.access.intercept.AuthorizationFilter@bedebe9]
+2025-11-26 21:34:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:34:52 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 9.771 seconds (process running for 10.932)
+2025-11-26 21:36:58 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 23680 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:36:58 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:36:58 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:37:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:37:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2025-11-26 21:37:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:37:03 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:37:03 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:37:03 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:37:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4757 ms
+2025-11-26 21:37:04 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:37:04 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:37:04 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:37:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:37:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:37:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ace2408
+2025-11-26 21:37:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:37:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:37:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:37:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:37:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:37:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:37:10 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:37:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d140627, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@386ec37d, org.springframework.security.web.context.SecurityContextHolderFilter@68312b85, org.springframework.security.web.header.HeaderWriterFilter@71dac63f, org.springframework.web.filter.CorsFilter@10007fdc, org.springframework.security.web.authentication.logout.LogoutFilter@5ef03158, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65d3e2ba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@628af295, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@cbd9494, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ca0aa55, org.springframework.security.web.session.SessionManagementFilter@58e0f079, org.springframework.security.web.access.ExceptionTranslationFilter@1695f7cb, org.springframework.security.web.access.intercept.AuthorizationFilter@2db07651]
+2025-11-26 21:37:12 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-11-26 21:37:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:37:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-26 21:37:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-26 21:37:12 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-11-26 21:37:12 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-11-26 21:49:04 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 18712 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:49:04 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:49:04 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:49:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:49:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2025-11-26 21:49:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:49:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:49:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:49:09 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:49:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4358 ms
+2025-11-26 21:49:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:49:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:49:11 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:49:11 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:49:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:49:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33eab2e8
+2025-11-26 21:49:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:49:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:49:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:49:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:49:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:49:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:49:18 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:49:18 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@477dc93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@781ecbac, org.springframework.security.web.context.SecurityContextHolderFilter@4ac1544f, org.springframework.security.web.header.HeaderWriterFilter@6aeb769d, org.springframework.web.filter.CorsFilter@5cb654e3, org.springframework.security.web.authentication.logout.LogoutFilter@16baf8d0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6179af64, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18372705, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1704437b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f89d36c, org.springframework.security.web.session.SessionManagementFilter@60052518, org.springframework.security.web.access.ExceptionTranslationFilter@11e36e5c, org.springframework.security.web.access.intercept.AuthorizationFilter@2ff2a096]
+2025-11-26 21:49:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:49:19 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 15.82 seconds (process running for 16.637)
+2025-11-26 21:53:57 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 23852 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 21:53:57 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 21:53:57 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 21:54:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 21:54:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interface.
+2025-11-26 21:54:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 21:54:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 21:54:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 21:54:03 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 21:54:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5216 ms
+2025-11-26 21:54:03 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 21:54:03 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 21:54:03 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 21:54:04 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 21:54:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 21:54:04 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ace2408
+2025-11-26 21:54:04 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 21:54:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 21:54:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 21:54:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 21:54:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 21:54:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 21:54:09 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 21:54:10 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6be865c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c140b12, org.springframework.security.web.context.SecurityContextHolderFilter@3db48e6, org.springframework.security.web.header.HeaderWriterFilter@e9c5db9, org.springframework.web.filter.CorsFilter@d140627, org.springframework.security.web.authentication.logout.LogoutFilter@1391d95f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@59c2bf78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1418a1bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39336f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@386ec37d, org.springframework.security.web.session.SessionManagementFilter@189c6683, org.springframework.security.web.access.ExceptionTranslationFilter@10806dbe, org.springframework.security.web.access.intercept.AuthorizationFilter@155cf9f6]
+2025-11-26 21:54:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 21:54:11 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 14.786 seconds (process running for 16.006)
+2025-11-26 22:10:25 [main] INFO  com.neurosync.NeuroSyncApplication - Starting NeuroSyncApplication using Java 17.0.15 with PID 28248 (C:\Users\Jaylo\Documents\NeuroSync\neuro-core\target\classes started by Jaylo in C:\Users\Jaylo\Documents\NeuroSync\neuro-core)
+2025-11-26 22:10:25 [main] DEBUG com.neurosync.NeuroSyncApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-11-26 22:10:25 [main] INFO  com.neurosync.NeuroSyncApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-26 22:10:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26 22:10:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 220 ms. Found 1 JPA repository interface.
+2025-11-26 22:10:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-11-26 22:10:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-26 22:10:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-11-26 22:10:32 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-11-26 22:10:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6696 ms
+2025-11-26 22:10:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-26 22:10:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-11-26 22:10:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-11-26 22:10:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26 22:10:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-26 22:10:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@506b083
+2025-11-26 22:10:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-26 22:10:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-26 22:10:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-26 22:10:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-26 22:10:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26 22:10:38 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-26 22:10:40 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2025-11-26 22:10:40 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@197c3101, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b5e1b16, org.springframework.security.web.context.SecurityContextHolderFilter@1704437b, org.springframework.security.web.header.HeaderWriterFilter@38f2342b, org.springframework.web.filter.CorsFilter@4d65fbad, org.springframework.security.web.authentication.logout.LogoutFilter@6cca70e3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@bedebe9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bfedff3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44a25dc7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55fc6344, org.springframework.security.web.session.SessionManagementFilter@c11ec9b, org.springframework.security.web.access.ExceptionTranslationFilter@6aeb769d, org.springframework.security.web.access.intercept.AuthorizationFilter@10007fdc]
+2025-11-26 22:10:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/api'
+2025-11-26 22:10:41 [main] INFO  com.neurosync.NeuroSyncApplication - Started NeuroSyncApplication in 17.358 seconds (process running for 18.214)
