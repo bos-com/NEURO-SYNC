@@ -1,0 +1,14 @@
+{
+  "title": "NeuroSync",
+  "voiceRecorder": {
+    "title": "Kirekodi Sauti",
+    "start": "Anza Kurekodi",
+    "stop": "Acha Kurekodi"
+  },
+  "chat": {
+    "greeting": "Habari 👋, Mimi ni NeuroSync. Unajisikiaje leo?",
+    "send": "Tuma",
+    "thinking": "Inafikiria...",
+    "error": "⚠️ Hitilafu kuwasiliana na huduma ya AI."
+  }
+}

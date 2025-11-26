@@ -1,7 +1,7 @@
 import React from "react";
 import VoiceRecorder from "../components/VoiceRecorder";
-import ChatBox from "../components/ChatBox";
-import BrainAnimation from "../components/BrainAnimation";
+import ChatBox from "../components/ChatBoxClean";
+import BrainAnimation from "../components/BrainAnimationClean";
 
 export default function Home() {
   return (

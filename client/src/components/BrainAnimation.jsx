@@ -1,10 +1,4 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-export default function BrainAnimation() {
-  return (
-    <div className="bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-center">
-      <h2 className="text-xl font-semibold mb-4">🧠 Brain Activity</h2>
+export { default } from "./BrainAnimationClean";
       <motion.div
         animate={{
           scale: [1, 1.05, 1],
@@ -29,7 +23,7 @@ export default function BrainAnimation() {
 }
 
 
-export default function BrainAnimation({ emotion = "Neutral" }) {
+ { emotion = "Neutral" }) {
   const colorMap = {
     Happy: "from-yellow-400 to-orange-500",
     Sad: "from-blue-500 to-indigo-700",

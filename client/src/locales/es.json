@@ -1,0 +1,14 @@
+{
+  "title": "NeuroSync",
+  "voiceRecorder": {
+    "title": "Grabadora de Voz",
+    "start": "Comenzar a Grabar",
+    "stop": "Detener Grabación"
+  },
+  "chat": {
+    "greeting": "Hola 👋, soy NeuroSync. ¿Cómo te sientes hoy?",
+    "send": "Enviar",
+    "thinking": "Pensando...",
+    "error": "⚠️ Error al contactar el servicio de IA."
+  }
+}

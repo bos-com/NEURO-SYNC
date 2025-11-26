@@ -1,0 +1,14 @@
+{
+  "title": "NeuroSync",
+  "voiceRecorder": {
+    "title": "Kikwaso ky'Amalobozi",
+    "start": "Okutandika",
+    "stop": "Lekera awo"
+  },
+  "chat": {
+    "greeting": "Okubuza 👋, Ndi NeuroSync. Omutima gwo guli otya leero?",
+    "send": "Okuwereza",
+    "thinking": "Okutekereza...",
+    "error": "⚠️ Ensobi mu kukwata ku kkampuni ya AI."
+  }
+}
