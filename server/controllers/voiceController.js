@@ -26,8 +26,8 @@ async function analyzeVoice(req, res) {
       return res.status(400).json({ error: 'Text from voice transcription is required' });
     }
 
-    // Process the message (same as text message)
-    const emotionData = detectEmotion(text);
+    // Process the message (same as text message) - now uses external API if available
+    const emotionData = await detectEmotion(text);
     const suggestions = getSuggestions(emotionData.emotion);
 
     // Generate response

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000", // Node.js backend URL
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5001", // Node.js backend URL
   headers: {
     "Content-Type": "application/json",
   },
@@ -36,7 +36,16 @@ export const sendTextMessage = async (text) => {
     return response.data;
   } catch (error) {
     console.error("Error sending text message:", error);
-    throw error;
+    if (error.response) {
+      // Server responded with error
+      throw new Error(error.response.data?.error || `Server error: ${error.response.status}`);
+    } else if (error.request) {
+      // Request made but no response
+      throw new Error("Cannot connect to server. Make sure the server is running on port 5001.");
+    } else {
+      // Something else happened
+      throw new Error(error.message || "Failed to send message");
+    }
   }
 };
 

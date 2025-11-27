@@ -8,8 +8,8 @@ async function handleMessage(req, res) {
       return res.status(400).json({ error: 'Text message is required' });
     }
 
-    // Detect emotion from the message
-    const emotionData = detectEmotion(text);
+    // Detect emotion from the message (now async - uses external API if available)
+    const emotionData = await detectEmotion(text);
     const suggestions = getSuggestions(emotionData.emotion);
 
     // Generate a contextual response

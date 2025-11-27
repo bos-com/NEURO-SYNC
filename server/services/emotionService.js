@@ -1,8 +1,15 @@
 const natural = require('natural');
 const { SentimentAnalyzer, PorterStemmer } = natural;
+const axios = require('axios');
 
-// Initialize sentiment analyzer
-const analyzer = new SentimentAnalyzer('English', PorterStemmer, ['negation']);
+// Initialize sentiment analyzer (removed negation - not supported in this version)
+let analyzer;
+try {
+  analyzer = new SentimentAnalyzer('English', PorterStemmer, []);
+} catch (err) {
+  console.warn('Sentiment analyzer failed, using keyword detection only:', err.message);
+  analyzer = null;
+}
 
 // Emotion keywords mapping
 const emotionKeywords = {
@@ -13,9 +20,58 @@ const emotionKeywords = {
   neutral: ['okay', 'fine', 'alright', 'normal', 'nothing', 'meh']
 };
 
-function detectEmotion(text) {
+// Try to use external emotion detection API (Hugging Face)
+async function detectEmotionWithAPI(text) {
+  try {
+    // Option 1: Hugging Face Emotion Detection (Free, no API key needed for inference)
+    const response = await axios.post(
+      'https://api-inference.huggingface.co/models/j-hartmann/emotion-english-distilroberta-base',
+      { inputs: text },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        timeout: 5000 // 5 second timeout
+      }
+    );
+
+    if (response.data && Array.isArray(response.data) && response.data[0]) {
+      const emotions = response.data[0];
+      // Find the emotion with highest score
+      const topEmotion = emotions.reduce((max, emotion) => 
+        emotion.score > max.score ? emotion : max
+      );
+
+      // Map Hugging Face emotions to our emotion categories
+      const emotionMap = {
+        'joy': 'Happy',
+        'sadness': 'Sad',
+        'anger': 'Angry',
+        'fear': 'Anxious',
+        'surprise': 'Happy',
+        'disgust': 'Angry',
+        'neutral': 'Neutral'
+      };
+
+      const mappedEmotion = emotionMap[topEmotion.label] || 'Neutral';
+      
+      return {
+        emotion: mappedEmotion,
+        confidence: topEmotion.score,
+        source: 'huggingface',
+        raw: emotions
+      };
+    }
+  } catch (error) {
+    console.log('External API not available, using local detection:', error.message);
+    return null;
+  }
+}
+
+// Local emotion detection (fallback)
+function detectEmotionLocal(text) {
   if (!text || typeof text !== 'string') {
-    return { emotion: 'Neutral', confidence: 0.5 };
+    return { emotion: 'Neutral', confidence: 0.5, source: 'local' };
   }
 
   const lowerText = text.toLowerCase();
@@ -29,18 +85,20 @@ function detectEmotion(text) {
   });
 
   // Use sentiment analysis
-  try {
-    const sentiment = analyzer.getSentiment(text.split(' '));
-    
-    // Combine keyword matching with sentiment
-    if (sentiment > 0.3) {
-      scores.happy = (scores.happy || 0) + 2;
-    } else if (sentiment < -0.3) {
-      scores.sad = (scores.sad || 0) + 2;
-      scores.angry = (scores.angry || 0) + 1;
+  if (analyzer) {
+    try {
+      const sentiment = analyzer.getSentiment(text.split(' '));
+      
+      // Combine keyword matching with sentiment
+      if (sentiment > 0.3) {
+        scores.happy = (scores.happy || 0) + 2;
+      } else if (sentiment < -0.3) {
+        scores.sad = (scores.sad || 0) + 2;
+        scores.angry = (scores.angry || 0) + 1;
+      }
+    } catch (err) {
+      console.error('Sentiment analysis error:', err);
     }
-  } catch (err) {
-    console.error('Sentiment analysis error:', err);
   }
 
   // Find dominant emotion
@@ -54,8 +112,21 @@ function detectEmotion(text) {
   return {
     emotion: detectedEmotion.charAt(0).toUpperCase() + detectedEmotion.slice(1),
     confidence: confidence,
+    source: 'local',
     scores: scores
   };
+}
+
+// Main emotion detection function - tries API first, falls back to local
+async function detectEmotion(text) {
+  // Try external API first
+  const apiResult = await detectEmotionWithAPI(text);
+  if (apiResult) {
+    return apiResult;
+  }
+  
+  // Fallback to local detection
+  return detectEmotionLocal(text);
 }
 
 function getSuggestions(emotion) {
@@ -91,4 +162,3 @@ function getSuggestions(emotion) {
 }
 
 module.exports = { detectEmotion, getSuggestions };
-

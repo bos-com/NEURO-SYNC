@@ -9,6 +9,6 @@
     "greeting": "Bonjour 👋, je suis NeuroSync. Comment vous sentez-vous aujourd'hui ?",
     "send": "Envoyer",
     "thinking": "Réflexion...",
-    "error": "⚠️ Erreur lors de la connexion au service IA."
+    "error": "⚠️ Erreur lors de la connexion à NeuroSync."
   }
 }

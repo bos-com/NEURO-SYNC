@@ -7,6 +7,17 @@ const ChatBox = forwardRef(function ChatBox(props, ref) {
   const [messages, setMessages] = useState([
     { sender: "ai", text: t('chat.greeting') },
   ]);
+
+  // Update greeting when language changes
+  useEffect(() => {
+    setMessages((prev) => {
+      const updated = [...prev];
+      if (updated[0] && updated[0].sender === 'ai') {
+        updated[0] = { ...updated[0], text: t('chat.greeting') };
+      }
+      return updated;
+    });
+  }, [i18n.language, t]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [playingAudio, setPlayingAudio] = useState(null);
@@ -70,27 +81,30 @@ const ChatBox = forwardRef(function ChatBox(props, ref) {
       };
       setMessages((prev) => [...prev, aiMsg]);
       
-      // Get audio response if voice mode
-      if (useVoice) {
-        try {
-          const audioRes = await getAudioResponse(res.message, i18n.language);
-          if (audioRes.audioUrl) {
-            // Update message with audio URL
-            setMessages((prev) => {
-              const updated = [...prev];
-              updated[updated.length - 1].audioUrl = audioRes.audioUrl;
-              return updated;
-            });
+      // Always get audio response (for both voice and text)
+      try {
+        const audioRes = await getAudioResponse(res.message, i18n.language);
+        if (audioRes.audioUrl) {
+          // Update message with audio URL
+          setMessages((prev) => {
+            const updated = [...prev];
+            updated[updated.length - 1].audioUrl = audioRes.audioUrl;
+            return updated;
+          });
+          // Auto-play if voice mode, otherwise just make it available
+          if (useVoice) {
             playAudio(audioRes.audioUrl);
           }
-        } catch (audioErr) {
-          console.error("Error getting audio:", audioErr);
         }
+      } catch (audioErr) {
+        console.error("Error getting audio:", audioErr);
       }
     } catch (err) {
+      console.error("API Error:", err);
+      const errorMsg = err.message || 'Server not responding';
       setMessages((prev) => [
         ...prev,
-        { sender: "ai", text: t('chat.error') },
+        { sender: "ai", text: `NeuroSync: ${t('chat.error')} - ${errorMsg}` },
       ]);
     } finally {
       setLoading(false);
@@ -156,17 +170,20 @@ const ChatBox = forwardRef(function ChatBox(props, ref) {
           {t('chat.send')}
         </button>
       </div>
-      {messages.map((msg, i) => 
-        msg.audioUrl && (
-          <div key={`audio-${i}`} className="mt-2">
-            <button
-              onClick={() => playAudio(msg.audioUrl)}
-              className="text-sm bg-purple-600 hover:bg-purple-700 px-3 py-1 rounded"
-            >
-              🔊 Play Response
-            </button>
-          </div>
-        )
+      {messages.filter(msg => msg.audioUrl).length > 0 && (
+        <div className="mt-2 flex gap-2 flex-wrap">
+          {messages.map((msg, i) => 
+            msg.audioUrl && (
+              <button
+                key={`audio-${i}`}
+                onClick={() => playAudio(msg.audioUrl)}
+                className="text-xs bg-purple-600 hover:bg-purple-700 px-2 py-1 rounded"
+              >
+                🔊 Play {msg.sender === 'ai' ? 'AI' : 'Response'}
+              </button>
+            )
+          )}
+        </div>
       )}
     </div>
   );
